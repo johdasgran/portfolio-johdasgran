@@ -1,3 +1,13 @@
+:root {
+    --dark-dracula: #1F1D36;
+    --purple-dracula: #3F3351;
+    --lilac-dracula: #864879;
+    --rose-dracula: #E9A6A6;
+    --light-dracula: #D1C4E9;
+    --white: #FFFFFF;
+    --dark: #212121;
+}
+
 * {
     margin: 0;
     padding: 0;
