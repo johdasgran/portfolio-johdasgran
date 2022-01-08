@@ -47,14 +47,12 @@ body {
     display: grid;
     grid-template: 100vh / 1fr 1fr;
     /* background-color: var(--); */
+    background-color: var(--dark-dracula);
 }
 
 .stack-container {
    padding: 24px;
-   background-color: var(--dark-dracula);
    border-radius: 0 8px 8px 0;
-
-
 }
 
 
@@ -76,14 +74,13 @@ p.tab {
 
 /** RIGHT **/
 
-.game-container {
+/* .game-container {
     padding: 12px;
-}
-
+} */
 
 /* Card */
 
-.card {
+/* .card {
     background-color: var(--dark-dracula);
    
     position: relative;
@@ -134,4 +131,4 @@ p.tab {
     font-size: 0.6rem;
     color: var(--green);
     font-weight: 700;
-}
+} */
