@@ -46,7 +46,7 @@ body {
 .container {
     display: grid;
     grid-template: 100vh / 1fr 1fr;
-    background-color: #E9A6A6;
+    /* background-color: var(--); */
 }
 
 .stack-container {
@@ -84,7 +84,7 @@ p.tab {
 /* Card */
 
 .card {
-    background-color: var(--dark);
+    background-color: var(--dark-dracula);
    
     position: relative;
     border-radius: 8px;
@@ -102,11 +102,21 @@ p.tab {
 .card {
      display: grid;
      grid-template-columns: 1fr 4fr;
-
 }
+
+
+.card .content {
+    padding: 8px;
+}
+
+
 
 .card img {
    width: 60px;
+   height: 100%;
+   border-radius: 8px;
+
+ 
 }
 
 .card h2 {
@@ -114,14 +124,14 @@ p.tab {
     color: var(--light-dracula);
 }
 
-.card p {
-    font-size: 1rem;
+.content p:nth-child(2) {
+    font-size: 0.8rem;
     color: var(--white);
 }
 
-.card span {
+.content p:nth-child(3) {
     padding-top: 8px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: var(--green);
     font-weight: 700;
 }
