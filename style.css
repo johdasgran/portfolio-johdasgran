@@ -2,6 +2,7 @@
   --dark-dracula: #1f1d36;
   --purple-dracula: #3f3351;
   --lilac-dracula: #864879;
+  --code-dracula: #ff60de;
   --rose-dracula: #e9a6a6;
   --light-dracula: #d1c4e9;
   --white: #ffffff;
@@ -36,6 +37,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--dark-dracula);
 }
 
 h1,
@@ -47,11 +49,12 @@ p {
   display: grid;
   height: 100vh;
   grid-template: repeat(7, 1fr) / repeat(5, 1fr);
-  background-color: var(--dark-dracula);
   place-items: center;
 }
 
 .github {
+  padding: 12px;
+  align-self: start;
   grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -98,17 +101,31 @@ p {
 }
 
 
-
-
 .tab {
     padding-left: 16px;
-    color: var(--grey);
 }
 
-.yellow {
-    color: var(--yellow);
+.comment {
+  /* color: #ffcbcb; */
+  color: var(--white);
+}
+
+.brackets {
+    color: var(--orange);
 }
 
 .code {
-    color: var(--lilac-dracula);
+    color: var(--code-dracula);
+}
+
+.string {
+  color: var(--blue);
+  /* color: var(--orange); */
+}
+
+
+.bat img {
+  padding-block-start: 12px;
+  width: 80px;
+  height: auto;
 }

@@ -9,6 +9,7 @@ const aboutme = {
   //programming.
 };
 
+
 const projects = {
     "batatabit": "🥔 La próxima revolución en el intercambio de criptomonedas",
     "best-food": "🥗 Check the best food",
