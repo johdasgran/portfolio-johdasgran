@@ -5,7 +5,22 @@
     --rose-dracula: #E9A6A6;
     --light-dracula: #D1C4E9;
     --white: #FFFFFF;
-    --dark: #212121;
+    --grey: #7A7A7A;
+    --dark: #262626;
+
+    /* Links */
+
+    --green: #42E66C;
+    --red: #E64747;
+    --blue: #8BE9FD;
+    --yellow: #E4F34A;
+    --orange: #FFB86C;
+
+    /* Font size */
+
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.6rem;
 }
 
 * {
@@ -18,35 +33,95 @@ html {
     font-size: 62.5%;
 }
 
-body div {
-    width: 50px;
-    height: 50px;
+body {
+    /* background-image: linear-gradient(to bottom, #1f1d36, #47425f, #726a8a, #a096b9, #d1c4e9); */
+    /* background-image: linear-gradient(to bottom, #864879, #976797, #a986b3, #bca5cf, #d1c4e9); */
+    /* background-image: linear-gradient(to bottom, #1f1d36, #27223d, #2f2843, #372d4a, #3f3351); */
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to bottom, #1f1d36, #25213b, #2b2540, #312945, #372d4a, #3f3150, #473557, #4f395d, #5c3d65, #69416d, #774573, #864879); */
+    /* background-image: linear-gradient(to bottom, #110e15, #15111b, #171421, #1a1727, #1c192d, #201c32, #231f38, #27223d, #2d2642, #332a47, #392f4c, #3f3351); */
 }
 
-body .colors:nth-child(1) {
-    background-color: var(--dark-dracula);
+.container {
+    display: grid;
+    grid-template: 100vh / 1fr 1fr;
+    background-color: #E9A6A6;
 }
 
-body .colors:nth-child(2) {
-    background-color: var(--light-dracula);
+.stack-container {
+   padding: 24px;
+   background-color: var(--dark-dracula);
+   border-radius: 0 8px 8px 0;
+
+
 }
 
-body .colors:nth-child(3) {
-    background-color: var(--lilac-dracula);
+
+h1, p {
+    color: var(--light-dracula);
 }
 
-body .colors:nth-child(4) {
-    background-color: var(--purple-dracula);
+
+p.tab {
+    padding-top: 4px;
+    padding-left: 20px;
 }
 
-body .colors:nth-child(5) {
-    background-color: var(--rose-dracula);
+
+
+
+
+
+
+/** RIGHT **/
+
+.game-container {
+    padding: 12px;
 }
 
-body .colors:nth-child(6) {
+
+/* Card */
+
+.card {
     background-color: var(--dark);
+   
+    position: relative;
+    border-radius: 8px;
 }
 
-body .colors:nth-child(7) {
-    background-color: var(--white);
+.card-icon {
+    position: absolute;
+    width: 41px;
+    height: 25px;
+    background: url(https://raw.githubusercontent.com/johdasgran/batatabit/main/assets/icons/desktop/batata.png) center/cover no-repeat;
+    right: -10px;
+    top: -10px;
+}
+
+.card {
+     display: grid;
+     grid-template-columns: 1fr 4fr;
+
+}
+
+.card img {
+   width: 60px;
+}
+
+.card h2 {
+    font-size: var(--md);
+    color: var(--light-dracula);
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.card span {
+    padding-top: 8px;
+    font-size: 0.8rem;
+    color: var(--green);
+    font-weight: 700;
 }
