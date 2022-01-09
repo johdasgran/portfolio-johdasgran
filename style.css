@@ -40,6 +40,19 @@ body {
   background-color: var(--dark-dracula);
 }
 
+h1 {
+  font-size: var(--lg);
+}
+
+h2 {
+  font-size: var(--md);
+}
+
+p {
+  font-size: 1rem;
+}
+
+
 h1,
 p {
   color: var(--light-dracula);
@@ -48,51 +61,15 @@ p {
 .container {
   display: grid;
   height: 100vh;
-  grid-template: repeat(7, 1fr) / repeat(5, 1fr);
+  grid-template: 100% / 100%;
   place-items: center;
 }
 
-.github {
-  place-self: start;
-  padding: 12px 0 0 12px;
-  grid-area: 1 / 1 / 2 / 2;
-  font-weight: 700;
-}
-
-.github p:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: -55px;
-  padding-right: 90px;
-  transform: rotate(270deg);
-  color: var(--orange);
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.github p:nth-child(2) a {
- text-decoration: none;
- color: var(--blue);
-  font-weight: 700;
-}
-
-
-.image-moon {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-}
-
-.image-moon img {
-  /* padding-block-start: 12px; */
-  width: 68px;
-  height: auto;
-}
-
-/*** MAIN ***/
+/* Main */
 
 .aboutme-container {
-  /* background-color: var(--lilac-dracula); */
-  grid-area: 3 / 2 / 6 / 5;
+  padding: 12px;
+  border-radius: 8px;
 }
 
 .header {
@@ -103,6 +80,7 @@ p {
 
 .header img {
   padding-left: 8px;
+  height: 40px;
 }
 
 .name {
@@ -141,23 +119,53 @@ p {
   /* color: var(--orange); */
 }
 
-.bat {
-  grid-area: 2 / 4 / 3 / 5;
+
+
+/** RESPOSIVE DESIGN **/
+
+@media (min-width: 640px) { 
+  :root {
+    --sm: 1.8rem;
+    --md: 2.2rem;
+    --lg: 2.6rem;
+  }
+
+  h1 {
+    font-size: var(--lg);
+  }
+  
+  h2 {
+    font-size: var(--md);
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+
+  .header {
+    grid-template-columns: 90px 4fr;
+  }
+    
+  .header img {
+    padding-left: 8px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
-.bat img {
-  padding-block-start: 12px;
-  width: 80px;
-  height: auto;
-}
 
-.cuadro {
-  grid-area: 6 / 6 / 9 / 9;
-  place-self: start;
-  opacity: 50%;
-}
 
-.cuadro img {
- width: 80px;
- height: auto;
+@media (min-width: 1024px) {
+
+  :root {
+    --sm: 2.8rem;
+    --md: 3rem;
+    --lg: 3.6rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+
+  
 }
