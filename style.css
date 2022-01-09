@@ -53,10 +53,29 @@ p {
 }
 
 .github {
-  padding: 12px;
-  align-self: start;
+  place-self: start;
+  padding: 12px 0 0 12px;
   grid-area: 1 / 1 / 2 / 2;
+  font-weight: 700;
 }
+
+.github p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  padding-right: 90px;
+  transform: rotate(270deg);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.github p:nth-child(2) a {
+ text-decoration: none;
+ color: var(--blue);
+  font-weight: 700;
+}
+
 
 .image-moon {
   grid-column: 2 / 3;
@@ -64,45 +83,44 @@ p {
 }
 
 .image-moon img {
-  padding-block-start: 12px;
+  /* padding-block-start: 12px; */
   width: 68px;
   height: auto;
 }
 
-
-
 /*** MAIN ***/
 
 .aboutme-container {
-    /* background-color: var(--lilac-dracula); */
-    grid-area: 3 / 2 / 6 / 5 ;
-
+  /* background-color: var(--lilac-dracula); */
+  grid-area: 3 / 2 / 6 / 5;
 }
 
 .header {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 4fr;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 4fr;
+}
+
+.header img {
+  padding-left: 8px;
 }
 
 .name {
-    padding-left: 12px;
+  padding-left: 12px;
 }
 
 .name span {
-    color: var(--green);
-    font-weight: 700;
+  color: var(--green);
+  font-weight: 700;
 }
-
-
 
 .main h2 {
-    color: var(--green);
+  color: var(--green);
+  padding-bottom: 4px;
 }
 
-
 .tab {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 .comment {
@@ -111,11 +129,11 @@ p {
 }
 
 .brackets {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 .code {
-    color: var(--code-dracula);
+  color: var(--code-dracula);
 }
 
 .string {
@@ -123,9 +141,23 @@ p {
   /* color: var(--orange); */
 }
 
+.bat {
+  grid-area: 2 / 4 / 3 / 5;
+}
 
 .bat img {
   padding-block-start: 12px;
   width: 80px;
   height: auto;
+}
+
+.cuadro {
+  grid-area: 6 / 6 / 9 / 9;
+  place-self: start;
+  opacity: 50%;
+}
+
+.cuadro img {
+ width: 80px;
+ height: auto;
 }
