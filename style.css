@@ -116,9 +116,17 @@ p {
 
 .string {
   color: var(--blue);
-  /* color: var(--orange); */
 }
 
+.string a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.string a:hover {
+  color: var(--rose-dracula);
+  text-decoration: 2px underline var(--rose-dracula);
+}
 
 
 /** RESPOSIVE DESIGN **/
