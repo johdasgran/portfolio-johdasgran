@@ -4,9 +4,10 @@
 // Frontend developer
 
 const aboutme = {
-  //I'm Johan Gandas, live in
-  //Bucaramanga, i like the design and
-  //programming.
+  //I'm Johan Ganadas, I live
+  //in Bucaramanga,
+  //I like design and programming.
+    
 };
 
 
