@@ -37,7 +37,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--dark-dracula);
+  background: linear-gradient(
+    111.62deg,
+    #7a5ab7 8.26%,
+    #7a5ab7 33.81%,
+    #ac4496 61.34%,
+    #ac4496 90.83%
+  );
 }
 
 h1 {
@@ -52,128 +58,16 @@ p {
   font-size: 1rem;
 }
 
-
-h1,
-p {
-  color: var(--light-dracula);
-}
-
-.container {
+main {
   display: grid;
-  height: 100vh;
-  grid-template: 100% / 100%;
+  place-content: center;
   place-items: center;
+  height: 100vh;
 }
 
-/* Main */
-
-.aboutme-container {
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.header {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 40px 4fr;
-}
-
-.header img {
-  padding-left: 8px;
-  height: 40px;
-}
-
-.name {
-  padding-left: 12px;
-}
-
-.name span {
-  color: var(--green);
-  font-weight: 700;
-}
-
-.main h2 {
-  color: var(--green);
-  padding-bottom: 4px;
-}
-
-.tab {
-  padding-left: 16px;
-}
-
-.comment {
-  /* color: #ffcbcb; */
-  color: var(--white);
-}
-
-.brackets {
-  color: var(--orange);
-}
-
-.code {
-  color: var(--code-dracula);
-}
-
-.string {
-  color: var(--blue);
-}
-
-.string a {
-  color: var(--blue);
-  text-decoration: none;
-}
-
-.string a:hover {
-  color: var(--rose-dracula);
-  text-decoration: 2px underline var(--rose-dracula);
-}
-
-
-/** RESPOSIVE DESIGN **/
-
-@media (min-width: 640px) { 
-  :root {
-    --sm: 1.8rem;
-    --md: 2.2rem;
-    --lg: 2.6rem;
-  }
-
-  h1 {
-    font-size: var(--lg);
-  }
-  
-  h2 {
-    font-size: var(--md);
-  }
-  
-  p {
-    font-size: 2rem;
-  }
-
-  .header {
-    grid-template-columns: 90px 4fr;
-  }
-    
-  .header img {
-    padding-left: 8px;
-    width: 90px;
-    height: 90px;
-  }
-}
-
-
-
-@media (min-width: 1024px) {
-
-  :root {
-    --sm: 2.8rem;
-    --md: 3rem;
-    --lg: 3.6rem;
-  }
-
-  p {
-    font-size: 2.5rem;
-  }
-
-  
+.aboutme {
+  height: 95vh;
+  width: 95vw;
+  background-color: var(--dark-dracula);
+  border-radius: 60px;
 }
