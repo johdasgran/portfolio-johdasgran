@@ -2,16 +2,16 @@
   --dark-dracula: #1f1d36;
   --purple-dracula: #3f3351;
   --lilac-dracula: #864879;
-  --code-dracula: #ff60de;
+  --code-dracula: #FF60DE;
   --rose-dracula: #e9a6a6;
-  --light-dracula: #d1c4e9;
+  --light-dracula: #E0D0FF;
   --white: #ffffff;
   --grey: #7a7a7a;
   --dark: #262626;
 
   /* Links */
 
-  --green: #42e66c;
+  --green: #42E66C;
   --red: #e64747;
   --blue: #8be9fd;
   --yellow: #e4f34a;
@@ -19,9 +19,15 @@
 
   /* Font size */
 
+  --sm: 2.4rem;
+  --md: 3.6rem;
+  --lg: 6.4rem;
+
+
+/* 
   --sm: 1.2rem;
   --md: 1.4rem;
-  --lg: 1.6rem;
+  --lg: 1.6rem; */
 }
 
 * {
@@ -48,14 +54,17 @@ body {
 
 h1 {
   font-size: var(--lg);
+  color: var(--light-dracula);
 }
 
 h2 {
   font-size: var(--md);
+  color: var(--code-dracula);
 }
 
 p {
-  font-size: 1rem;
+  font-size: 2.4rem;
+  color: var(--white);
 }
 
 main {
@@ -70,4 +79,8 @@ main {
   width: 95vw;
   background-color: var(--dark-dracula);
   border-radius: 60px;
+}
+
+.code {
+  color: var(--green);
 }
