@@ -59,7 +59,7 @@ h1 {
 
 h2 {
   font-size: var(--md);
-  color: var(--code-dracula);
+  color: var(--green);
 }
 
 p {
@@ -81,6 +81,27 @@ main {
   border-radius: 60px;
 }
 
-.code {
+
+.info {
+  width: 350px;
+  padding: 40px;
+  position: relative;
+}
+
+.info p {
+  padding-bottom: 20px;
+}
+
+.info h2:nth-child(2) {
+  color: var(--code-dracula);
+}
+
+.info img {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+
+.icon {
   color: var(--green);
 }
