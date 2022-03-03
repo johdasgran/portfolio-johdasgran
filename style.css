@@ -88,7 +88,7 @@ main {
   position: relative;
 }
 
-.info p {
+.info .command {
   padding-bottom: 20px;
 }
 
