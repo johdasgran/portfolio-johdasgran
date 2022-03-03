@@ -6,8 +6,10 @@
   --rose-dracula: #e9a6a6;
   --light-dracula: #E0D0FF;
   --white: #ffffff;
-  --grey: #7a7a7a;
+  --grey: #F0EAF3;
   --dark: #262626;
+  --rose: #DF2A72; 
+  
 
   /* Links */
 
@@ -83,7 +85,7 @@ main {
 
 
 .info {
-  width: 350px;
+  width: 380px;
   padding: 40px;
   position: relative;
 }
@@ -102,6 +104,38 @@ main {
   right: 28px;
 }
 
+.info .frontend {
+  padding: 8px 0;
+}
+
+.aboutme-info {
+  padding: 12px 0;
+}
+
+.interest {
+  padding: 12px 0;
+}
+
 .icon {
   color: var(--green);
+}
+
+.code {
+  color: var(--code-dracula);
+}
+
+.const {
+  color: var(--light-dracula);
+}
+
+.comment {
+  color: var(--grey);
+}
+
+.bracket {
+  color: var(--orange);
+}
+
+.rose {
+  color: var(--rose);
 }
