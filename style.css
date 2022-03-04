@@ -1,6 +1,6 @@
 :root {
   --dark-dracula: #1f1d36;
-  --purple-dracula: #3f3351;
+  --purple-dracula: #2B2852;
   --lilac-dracula: #864879;
   --code-dracula: #FF60DE;
   --rose-dracula: #e9a6a6;
@@ -10,7 +10,7 @@
   --dark: #262626;
   --rose: #DF2A72; 
   
-
+  
   /* Links */
 
   --green: #42E66C;
@@ -73,11 +73,12 @@ main {
   display: flex;
   place-content: center;
   place-items: center;
-  height: 100%;
   margin: 24px 0;
 }
 
 .aboutme {
+  display: grid;
+  grid-template-columns: 35% 65%;
   height: 95%;
   width: 95vw;
   background-color: var(--dark-dracula);
@@ -151,4 +152,18 @@ main {
 
 .contact-title {
   color: var(--code-dracula);
+}
+
+
+/** Portfolio **/
+
+
+.portfolio {
+  background-color: var(--light-dracula);
+}
+
+.portfolio h1 {
+  color: var(--green);
+  text-align: center;
+  padding: 20px 0;
 }
