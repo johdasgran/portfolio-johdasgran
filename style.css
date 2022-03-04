@@ -73,22 +73,23 @@ main {
   display: flex;
   place-content: center;
   place-items: center;
-  margin: 24px 0;
+  margin: 24px;
 }
 
 .aboutme {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
   height: 95%;
   width: 95vw;
   background-color: var(--dark-dracula);
   border-radius: 60px;
+  padding: 40px;
 }
 
 
 .info {
   width: 380px;
-  padding: 40px;
+  /* padding: 40px; */
   position: relative;
 }
 
@@ -159,7 +160,9 @@ main {
 
 
 .portfolio {
-  background-color: var(--light-dracula);
+  padding: 24px;
+  background-color: var(--purple-dracula);
+  border-radius: 60px;
 }
 
 .portfolio h1 {
