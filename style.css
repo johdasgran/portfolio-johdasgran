@@ -70,14 +70,15 @@ p {
 }
 
 main {
-  display: grid;
+  display: flex;
   place-content: center;
   place-items: center;
-  height: 100vh;
+  height: 100%;
+  margin: 24px 0;
 }
 
 .aboutme {
-  height: 95vh;
+  height: 95%;
   width: 95vw;
   background-color: var(--dark-dracula);
   border-radius: 60px;
@@ -138,4 +139,16 @@ main {
 
 .rose {
   color: var(--rose);
+}
+
+.contact {
+  margin: 20px 0;
+  background-color: var(--dark-dracula);
+  border-radius: 24px;
+  padding: 20px;
+  filter: drop-shadow(-8px 8px 4px rgba(255, 96, 222, 0.25));
+}
+
+.contact-title {
+  color: var(--code-dracula);
 }
