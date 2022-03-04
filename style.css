@@ -83,7 +83,8 @@ main {
 
 .aboutme {
   display: grid;
-  grid-template-columns: 30% 70%;
+  /* grid-template-columns: 30% 70%; */
+  grid-template-columns: 400px 1fr;
   height: 95%;
   width: 95vw;
   background-color: var(--dark-dracula);
