@@ -171,8 +171,9 @@ main {
   border-radius: 60px;
 }
 
-.portfolio h1 {
-  color: var(--green);
+
+.portfolio h2 {
+  font-size: 4rem;
   text-align: center;
   padding: 20px 0;
 }
@@ -208,3 +209,7 @@ main {
   border-radius: 0 0 24px 24px;
 }
 
+.separator {
+  width: 100%;
+  padding-top: 40px;
+}
