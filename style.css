@@ -256,7 +256,7 @@ main {
 
 /** RESPONSIVE **/
 
-@media (max-width: 840px) {
+@media (max-width: 800px) {
   :root {
     --sm: 1.6rem;
     --md: 2.4rem;
@@ -334,5 +334,3 @@ main {
     width: 240px;
   }
 }
-
-
