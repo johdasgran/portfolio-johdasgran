@@ -213,3 +213,26 @@ main {
   width: 100%;
   padding-top: 40px;
 }
+
+
+/** SCROLL DESIGN **/
+
+/* Works on Firefox */
+* {
+  scrollbar-width: weight;
+  scrollbar-color:  var(--light-dracula) var(--dark-dracula);
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 6px; 
+} 
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-dracula); 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--light-dracula); 
+  border-radius: 20px; 
+}
