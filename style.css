@@ -259,7 +259,7 @@ main {
 @media (max-width: 640px) {
 
   :root {
-  --sm: 1.8rem;
+  --sm: 1.6rem;
   --md: 2.8rem;
   --lg: 4rem;
   }
@@ -273,8 +273,9 @@ main {
     margin: 24px;
   }
 
-  .aboutme {
 
+  .aboutme {
+    border-radius: 40px;
     grid-template-columns: 100%;
     padding: 12px;
   }
@@ -283,6 +284,10 @@ main {
     display: grid;
     width: 250px;
     padding: 20px;
+  }
+
+  .info .command {
+    padding-bottom: 12px;
   }
 
 
@@ -308,11 +313,19 @@ main {
     width: 120px;
   }
 
+
+  .portfolio {
+    padding: 16px;
+    background-color: var(--purple-dracula);
+    border-radius: 40px;
+  }
+
   .portfolio h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: center;
     padding: 20px 0;
   }
+
 
 
 
