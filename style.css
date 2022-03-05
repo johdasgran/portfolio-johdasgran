@@ -260,7 +260,7 @@ main {
 
   :root {
   --sm: 1.6rem;
-  --md: 2.8rem;
+  --md: 2.4rem;
   --lg: 4rem;
   }
 
@@ -283,7 +283,9 @@ main {
   .info {
     display: grid;
     width: 250px;
+    margin: 0 auto;
     padding: 20px;
+    place-content: center;
   }
 
   .info .command {
@@ -309,7 +311,7 @@ main {
   .info img.torta {
     position: absolute;
     top: 300px;
-    right: 40px;
+    right: 20px;
     width: 120px;
   }
 
@@ -340,6 +342,23 @@ main {
     width: 240px;
    
   }
+
+}
+
+
+@media (max-width: 700px) {
+
+
+
+
+
+  /* .cards {
+    grid-template-columns: 1fr 1fr;
+  } */
+
+
+
+
 
 
 
