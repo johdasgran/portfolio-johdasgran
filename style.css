@@ -1,19 +1,18 @@
 :root {
   --dark-dracula: #1f1d36;
-  --purple-dracula: #2B2852;
+  --purple-dracula: #2b2852;
   --lilac-dracula: #864879;
-  --code-dracula: #FF60DE;
+  --code-dracula: #ff60de;
   --rose-dracula: #e9a6a6;
-  --light-dracula: #E0D0FF;
+  --light-dracula: #e0d0ff;
   --white: #ffffff;
-  --grey: #F0EAF3;
+  --grey: #f0eaf3;
   --dark: #262626;
-  --rose: #DF2A72; 
-  
-  
+  --rose: #df2a72;
+
   /* Links */
 
-  --green: #42E66C;
+  --green: #42e66c;
   --red: #e64747;
   --blue: #8be9fd;
   --yellow: #e4f34a;
@@ -25,8 +24,7 @@
   --md: 3.6rem;
   --lg: 6.4rem;
 
-
-/* 
+  /* 
   --sm: 1.2rem;
   --md: 1.4rem;
   --lg: 1.6rem; */
@@ -74,6 +72,28 @@ p {
   color: var(--white);
 }
 
+/** SCROLL DESIGN **/
+
+/* Works on Firefox */
+* {
+  scrollbar-width: weight;
+  scrollbar-color: var(--light-dracula) var(--dark-dracula);
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-dracula);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--light-dracula);
+  border-radius: 20px;
+}
+
 main {
   display: flex;
   place-content: center;
@@ -91,7 +111,6 @@ main {
   border-radius: 60px;
   padding: 40px;
 }
-
 
 .info {
   width: 380px;
@@ -169,16 +188,13 @@ main {
   color: var(--code-dracula);
 }
 
-
 /** Portfolio **/
-
 
 .portfolio {
   padding: 24px;
   background-color: var(--purple-dracula);
   border-radius: 60px;
 }
-
 
 .portfolio h2 {
   font-size: 4rem;
@@ -189,6 +205,7 @@ main {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
   gap: 12px;
 }
 
@@ -213,7 +230,20 @@ main {
   bottom: 2px;
   height: 80px;
   width: 280px;
-  background: linear-gradient(180deg, rgba(29, 32, 54, 0) 0%, rgba(29, 32, 54, 0) 8.03%, rgba(29, 32, 54, 0) 15.84%, rgba(29, 32, 54, 0.9) 54.91%, rgba(29, 32, 54, 0.9) 59.59%, rgba(31, 29, 54, 0.9) 67.93%, rgba(29, 32, 54, 0.9) 76.26%, rgba(31, 29, 54, 0.9) 76.26%, rgba(29, 32, 54, 0.9) 86.68%, rgba(29, 32, 54, 0.9) 92.93%, rgba(29, 32, 54, 0.9) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(29, 32, 54, 0) 0%,
+    rgba(29, 32, 54, 0) 8.03%,
+    rgba(29, 32, 54, 0) 15.84%,
+    rgba(29, 32, 54, 0.9) 54.91%,
+    rgba(29, 32, 54, 0.9) 59.59%,
+    rgba(31, 29, 54, 0.9) 67.93%,
+    rgba(29, 32, 54, 0.9) 76.26%,
+    rgba(31, 29, 54, 0.9) 76.26%,
+    rgba(29, 32, 54, 0.9) 86.68%,
+    rgba(29, 32, 54, 0.9) 92.93%,
+    rgba(29, 32, 54, 0.9) 100%
+  );
   border-radius: 0 0 24px 24px;
 }
 
@@ -223,25 +253,3 @@ main {
 }
 
 
-
-/** SCROLL DESIGN **/
-
-/* Works on Firefox */
-* {
-  scrollbar-width: weight;
-  scrollbar-color:  var(--light-dracula) var(--dark-dracula);
-}
-
-/* Works on Chrome, Edge, and Safari */
-body::-webkit-scrollbar {
-  width: 6px; 
-} 
-
-body::-webkit-scrollbar-track {
-  background: var(--dark-dracula); 
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--light-dracula); 
-  border-radius: 20px; 
-}
