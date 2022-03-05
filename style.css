@@ -68,7 +68,7 @@ h3 {
 }
 
 p {
-  font-size: 2.4rem;
+  font-size: var(--sm);
   color: var(--white);
 }
 
@@ -253,3 +253,82 @@ main {
 }
 
 
+/** RESPONSIVE **/
+
+
+@media (max-width: 640px) {
+
+  :root {
+  --sm: 1.8rem;
+  --md: 2.8rem;
+  --lg: 4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+
+  main {
+    margin: 24px;
+  }
+
+  .aboutme {
+
+    grid-template-columns: 100%;
+    padding: 12px;
+  }
+  
+  .info {
+    display: grid;
+    width: 250px;
+    padding: 20px;
+  }
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 12px;
+  }
+
+  .info img.me {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
+  
+  .info img.torta {
+    position: absolute;
+    top: 300px;
+    right: 40px;
+    width: 120px;
+  }
+
+  .portfolio h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
+
+  .card-project img {
+    width: 240px;
+    height: 140px;
+  }
+  
+
+  .shadow {
+    height: 60px;
+    width: 240px;
+   
+  }
+
+
+
+
+}
