@@ -185,10 +185,24 @@ main {
   border-radius: 60px;
 }
 
+.portfolio-title {
+  position: relative;
+}
+
 .portfolio h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 36px 0;
+}
+
+.portfolio-title h2.hidden {
+  -webkit-text-stroke: 1px rgba(250, 167, 92, 0.3);
+  color: transparent;
+  content: attr(data-heading);
+  left: 20px;
+  position: absolute;
+  top: 16px;
+  width: 100%;
 }
 
 .cards {
@@ -206,7 +220,8 @@ main {
 .card-project img {
   width: 270px;
   height: 170px;
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: 8px;
 }
 
 .separator {
@@ -217,9 +232,9 @@ main {
 /**********/
 .overlay {
   position: absolute;
-  bottom: 3px;
+  bottom: 2px;
   /* background: rgb(50, 0, 90); */
-  background: rgba(31, 29, 54, 0.5);
+  background: rgba(31, 29, 54, 0.9);
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
@@ -227,7 +242,7 @@ main {
   color: white;
   height: 36px;
   text-align: center;
-  border-radius: 0 0 24px 24px;
+  border-radius: 0 0 8px 8px;
   padding-top: 8px;
 }
 
@@ -300,9 +315,9 @@ main {
   }
 
   .portfolio h2 {
-    font-size: 2.4rem;
+    font-size: 4rem;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 32px 0;
   }
 
   .card-project img {
@@ -312,5 +327,10 @@ main {
 
   .overlay {
     height: 30px;
+  }
+
+  .portfolio-title h2.hidden {
+    left: 10px;
+    top: 10px;
   }
 }
